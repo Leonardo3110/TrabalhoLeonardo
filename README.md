@@ -54,3 +54,16 @@ classDiagram
     class GestorDeEmissoes { +registrarConsumo() }
     class IObservadorMeta { <<interface>> +atualizar() }
     GestorDeEmissoes --> IObservadorMeta : Notifica
+
+    ---
+
+## 4. Como Rodar e Testar
+
+### Pré-requisitos
+* Java JDK instalado (versão 21 ou superior recomendada).
+
+### Passo 1: Compilar o Projeto
+Abra o terminal na pasta raiz do projeto (onde está este README) e execute:
+```bash
+mkdir bin
+javac -d bin -sourcepath src src/app/Main.java src/app/TestesAutomatizados.java
